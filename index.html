@@ -29,7 +29,7 @@
         
         <div class="footer" style="transform: translate(0px,600px);">
         <p><b>By: Sean Gaudefroy</b></p>
-        <p>Maps of Australian Population Density and Homelessness</p>
+        <p>Maps of Australian Population Density and Homelessness by region</p>
         <p>Data programming for Visualization Project</p>
         <a href="https://github.com/seangithub1"><b>Github Link</b></a>
     </div>
@@ -193,18 +193,6 @@ console.log(json);
                 .on("click", function(){
                 
                     togData = !togData
-//                    if (togData == true){
-//                        svg.selectAll("path")
-//                            .style("fill", function(d) {
-//                                var homelessness = d.properties.value;
-//                                if (homelessness) {
-//                                    return colorHomelessness(homelessness);
-//                                } else {
-//                                    //If value is undefined…
-//                                    return "#ccc";
-//                                } 
-//                         });
-//                    }
                 
                 if (togData == true){
                         svg.selectAll("path").transition().duration(800)
