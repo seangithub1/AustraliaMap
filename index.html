@@ -21,7 +21,7 @@
 		</style>
 	</head>
 	<body>
-        <center><p>Population Density and Homelessness In Australia</p></center>
+        <center><p><b>Population Density and Homelessness In Australia, 2016</b></p></center>
         
         <div class = "button-container" align="center">    
             <button class="button toggleData">Toggle Data</button>  
@@ -29,9 +29,12 @@
         
         <div class="footer" style="transform: translate(0px,600px);">
         <p><b>By: Sean Gaudefroy</b></p>
+        <p>Instructor: Suresh Lodha</p>
+        <p>CMPS 165: Data programming for Visualization Spring 2018</p>
         <p>Maps of Australian Population Density and Homelessness by region</p>
-        <p>Data programming for Visualization Project</p>
         <a href="https://github.com/seangithub1"><b>Github Link</b></a>
+        <a href="http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/3218.02016-17?OpenDocument"><b>Population Density Data Source</b></a>
+        <a href="http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/2049.02016?OpenDocument"><b>Homelessness Data Source</b></a>
     </div>
 		<script type="text/javascript">
             
@@ -193,6 +196,18 @@ console.log(json);
                 .on("click", function(){
                 
                     togData = !togData
+//                    if (togData == true){
+//                        svg.selectAll("path")
+//                            .style("fill", function(d) {
+//                                var homelessness = d.properties.value;
+//                                if (homelessness) {
+//                                    return colorHomelessness(homelessness);
+//                                } else {
+//                                    //If value is undefined…
+//                                    return "#ccc";
+//                                } 
+//                         });
+//                    }
                 
                 if (togData == true){
                         svg.selectAll("path").transition().duration(800)
